@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://vionyx.id/</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Public Pages - Authentication -->
+  <url>
+    <loc>https://vionyx.id/login</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vionyx.id/register</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vionyx.id/reset-password</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- 
+    Note: Protected pages (dashboard, admin, profile, top-up) are NOT included
+    because they require authentication and should not be indexed by search engines.
+    
+    Routes NOT included:
+    - /dashboard (requires login)
+    - /admin/* (requires admin access)
+    - /top-up (requires login)
+    - /profile (requires login)
+    - /payment/:reference (requires login, dynamic)
+    - /404 (error page)
+  -->
+
+</urlset>

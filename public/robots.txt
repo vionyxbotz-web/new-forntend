@@ -1,0 +1,68 @@
+# robots.txt untuk Vionyx - WhatsApp Bot Platform
+# Updated: 2025-01-11
+
+User-agent: *
+
+# ========================================
+# PUBLIC PAGES - Allow Crawling
+# ========================================
+Allow: /
+Allow: /login
+Allow: /register
+Allow: /reset-password
+
+# ========================================
+# PROTECTED PAGES - Disallow Crawling
+# ========================================
+# Dashboard & User Pages (requires login)
+Disallow: /dashboard
+Disallow: /top-up
+Disallow: /profile
+Disallow: /payment/
+
+# Admin Pages (requires admin access)
+Disallow: /admin/
+
+# Error Pages
+Disallow: /404
+
+# ========================================
+# TECHNICAL FILES - Disallow
+# ========================================
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /assets/
+Disallow: /dist/
+Disallow: /_next/
+Disallow: /node_modules/
+
+# ========================================
+# SITEMAP
+# ========================================
+Sitemap: https://vionyx.id/sitemap.xml
+
+# ========================================
+# CRAWL SETTINGS
+# ========================================
+# Crawl delay untuk menghindari overload server
+Crawl-delay: 1
+
+# Google Bot
+User-agent: Googlebot
+Allow: /
+Allow: /login
+Allow: /register
+Allow: /reset-password
+Disallow: /dashboard
+Disallow: /admin/
+Crawl-delay: 1
+
+# Bing Bot
+User-agent: Bingbot
+Allow: /
+Allow: /login
+Allow: /register
+Allow: /reset-password
+Disallow: /dashboard
+Disallow: /admin/
+Crawl-delay: 1
